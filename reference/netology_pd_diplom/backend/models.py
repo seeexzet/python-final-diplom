@@ -169,6 +169,10 @@ class ProductInfo(models.Model):
             models.UniqueConstraint(fields=['product', 'shop', 'external_id'], name='unique_product_info'),
         ]
 
+    def __str__(self):
+        # Пример: "Название продукта - Модель - Название магазина"
+        return f"{self.product.name} - {self.model} - {self.shop.name}"
+
 
 class Parameter(models.Model):
     objects = models.manager.Manager()
