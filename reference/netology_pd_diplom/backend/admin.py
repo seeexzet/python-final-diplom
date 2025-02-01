@@ -25,49 +25,70 @@ class CustomUserAdmin(UserAdmin):
 
 @admin.register(Shop)
 class ShopAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('id', 'name', 'url', 'state', 'user')
+    search_fields = ('name', 'url')
+    list_filter = ('state',)
+    ordering = ('name',)
 
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('id', 'name')
+    search_fields = ('name',)
+    ordering = ('name',)
 
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('id', 'name', 'category')
+    search_fields = ('name',)
+    list_filter = ('category',)
 
 
-@admin.register(ProductInfo)
 class ProductInfoAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('id', 'product', 'shop', 'external_id', 'quantity', 'price', 'price_rrc')
+    search_fields = ('product__name',)
+    list_filter = ('shop', 'product')
 
 
 @admin.register(Parameter)
 class ParameterAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('id', 'name')
+    search_fields = ('name',)
 
 
 @admin.register(ProductParameter)
-class ProductParameterAdmin(admin.ModelAdmin):
+class ProductInfoAdmin(admin.ModelAdmin):
     pass
 
+class OrderItemInline(admin.TabularInline):
+    model = OrderItem
+    extra = 1
 
 @admin.register(Order)
 class OrderAdmin(admin.ModelAdmin):
-    pass
-
+    list_display = ('id', 'user', 'dt', 'state', 'contact')
+    search_fields = ('user__email', 'state')
+    list_filter = ('state', 'dt')
+    inlines = [OrderItemInline]
 
 @admin.register(OrderItem)
 class OrderItemAdmin(admin.ModelAdmin):
     pass
 
-
 @admin.register(Contact)
 class ContactAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('id', 'user', 'city', 'street', 'house', 'phone')
+    search_fields = ('user__email', 'city', 'street', 'phone')
 
 
 @admin.register(ConfirmEmailToken)
 class ConfirmEmailTokenAdmin(admin.ModelAdmin):
-    list_display = ('user', 'key', 'created_at',)
+    list_display = ('id', 'user', 'key', 'created_at')
+    search_fields = ('user__email',)
+
+
+class OrderItemInline(admin.TabularInline):
+    model = OrderItem
+    extra = 1  # сколько пустых форм добавить для новых элементов
+
