@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 
+from backend.forms import OrderAdminForm
 from backend.models import User, Shop, Category, Product, ProductInfo, Parameter, ProductParameter, Order, OrderItem, \
     Contact, ConfirmEmailToken
 
@@ -124,6 +125,7 @@ class OrderAdmin(admin.ModelAdmin):
     search_fields = ('user__email', 'state')
     list_filter = ('state', 'dt')
     inlines = [OrderItemInline]
+    form = OrderAdminForm  # используем кастомную форму
 
 
 @admin.register(OrderItem)

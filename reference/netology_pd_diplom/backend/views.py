@@ -14,6 +14,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from ujson import loads as load_json
 from yaml import load as load_yaml, Loader
+from dal import autocomplete
 
 from backend.models import Shop, Category, Product, ProductInfo, Parameter, ProductParameter, Order, OrderItem, \
     Contact, ConfirmEmailToken
@@ -736,3 +737,16 @@ class OrderView(APIView):
                         return JsonResponse({'Status': True})
 
         return JsonResponse({'Status': False, 'Errors': 'Не указаны все необходимые аргументы'})
+
+
+class ContactAutocomplete(autocomplete.Select2QuerySetView):
+    def get_queryset(self):
+        qs = Contact.objects.all()
+
+        # Получаем переданное значение поля "user" из параметра forward
+        user_id = self.forwarded.get('user', None)
+        if user_id:
+            qs = qs.filter(user_id=user_id)
+        else:
+            qs = qs.none()  # Если пользователь не выбран, возвращаем пустой queryset
+        return qs
