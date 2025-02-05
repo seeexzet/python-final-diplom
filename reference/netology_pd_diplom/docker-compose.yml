@@ -1,0 +1,63 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: web
+    command: gunicorn netology_pd_diplom.wsgi:application --bind 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "80:8000"
+    environment:
+      DJANGO_SETTINGS_MODULE: netology_pd_diplom.settings
+      EMAIL_BACKEND: django.core.mail.backends.smtp.EmailBackend
+      EMAIL_HOST: smtp.mail.ru
+      EMAIL_HOST_USER: netology.diplom@mail.ru
+      EMAIL_HOST_PASSWORD: CLdm7yW4U9nivz9mbexu
+      EMAIL_PORT: "465"
+      EMAIL_USE_SSL: "True"
+      SERVER_EMAIL: netology.diplom@mail.ru
+      # Путь к файлу импорта
+      IMPORT_FILE_PATH: /app/importfile.json
+      # Настройки Celery
+      CELERY_BROKER_URL: redis://redis:6379/0
+      CELERY_RESULT_BACKEND: redis://redis:6379/0
+      CELERY_ACCEPT_CONTENT: '["json"]'
+      CELERY_TASK_SERIALIZER: json
+      CELERY_RESULT_SERIALIZER: json
+    depends_on:
+      - redis
+
+  worker:
+    build: .
+    container_name: celery_worker
+    command: celery -A netology_pd_diplom worker -l info
+    volumes:
+      - .:/app
+    environment:
+      DJANGO_SETTINGS_MODULE: netology_pd_diplom.settings
+      # EMAIL настройки (если нужны для отправки уведомлений)
+      EMAIL_BACKEND: django.core.mail.backends.smtp.EmailBackend
+      EMAIL_HOST: smtp.mail.ru
+      EMAIL_HOST_USER: kruglicov@vk.com
+      EMAIL_HOST_PASSWORD: 5xQjdqQhzadAcndcmJ9g
+      EMAIL_PORT: "465"
+      EMAIL_USE_SSL: "True"
+      SERVER_EMAIL: kruglicov@vk.com
+      # Путь к файлу импорта
+      IMPORT_FILE_PATH: /app/importfile.json
+      # Настройки Celery
+      CELERY_BROKER_URL: redis://redis:6379/0
+      CELERY_RESULT_BACKEND: redis://redis:6379/0
+      CELERY_ACCEPT_CONTENT: '["json"]'
+      CELERY_TASK_SERIALIZER: json
+      CELERY_RESULT_SERIALIZER: json
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - "6379:6379"

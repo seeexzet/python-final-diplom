@@ -64,5 +64,29 @@
     create database diplom_db owner mploy;
     alter user mploy createdb;
 
-    
-   
+## **Для тестирования меденных методов нужно**
+
+Установка Docker-контейнера с Redis (когда не в Docker-образе):
+
+    docker pull redis:latest
+
+    docker run -d --name redis-server -p 6379:6379 redis:latest
+
+Запуск worker в терминале для записи логов в файл
+
+    celery -A netology_pd_diplom worker -l info -P solo -f celery.log
+
+Тестирование медленных функций из другого терминала
+
+    python manage.py shell
+    from backend.tasks import do_import, send_email
+    result_email = send_email.delay("netology.diplom@mail.ru", "Тестовое письмо", "Это тестовое сообщение.")
+    result_import = do_import.delay()
+    print("Email result:", result_email.get(timeout=10))
+    print("Import result:", result_import.get(timeout=10)) 
+
+Тестовые данные для импорта лежат в файле importfile.json
+
+Установка всего проекта из Docker-образа
+
+    docker-compose up --build -d

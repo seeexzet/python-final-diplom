@@ -1,0 +1,384 @@
+[2025-02-04 15:02:09,409: WARNING/MainProcess] C:\python study\diplom\python-final-diplom\reference\netology_pd_diplom\venv\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-02-04 15:02:09,423: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2025-02-04 15:02:09,424: WARNING/MainProcess] C:\python study\diplom\python-final-diplom\reference\netology_pd_diplom\venv\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-02-04 15:02:09,434: INFO/MainProcess] mingle: searching for neighbors
+[2025-02-04 15:02:10,502: INFO/MainProcess] mingle: all alone
+[2025-02-04 15:02:10,582: INFO/MainProcess] celery@LAPTOP-035AGQ98 ready.
+[2025-02-04 15:02:10,595: INFO/MainProcess] Task backend.tasks.send_email[9266ac75-932e-4476-81ca-426ba50ffd27] received
+[2025-02-04 15:02:10,596: WARNING/MainProcess] Отправка письма
+[2025-02-04 15:02:13,011: INFO/MainProcess] Task backend.tasks.send_email[9266ac75-932e-4476-81ca-426ba50ffd27] succeeded in 2.4209999999729916s: 'Письмо отправлено успешно. Результат: 1'
+[2025-02-04 15:02:13,022: INFO/MainProcess] Task backend.tasks.do_import[e851bede-545e-40f3-8657-e03f1d906036] received
+[2025-02-04 15:02:13,023: ERROR/MainProcess] Ошибка чтения файла importfile.json: [Errno 2] No such file or directory: 'importfile.json'
+[2025-02-04 15:02:13,033: INFO/MainProcess] Task backend.tasks.do_import[e851bede-545e-40f3-8657-e03f1d906036] succeeded in 0.0s: 'Ошибка чтения файла importfile.json: [Errno 2] No such file or directory: \'importfile.json\''
+[2025-02-04 15:02:13,042: INFO/MainProcess] Task backend.tasks.send_email[63b4c7b6-2db4-46f4-a766-9ede922248fb] received
+[2025-02-04 15:02:13,042: WARNING/MainProcess] Отправка письма
+[2025-02-04 15:02:15,034: INFO/MainProcess] Task backend.tasks.send_email[63b4c7b6-2db4-46f4-a766-9ede922248fb] succeeded in 1.984000000054948s: 'Письмо отправлено успешно. Результат: 1'
+[2025-02-04 15:05:50,608: INFO/MainProcess] Task backend.tasks.send_email[1c2c2626-f23a-4d05-a613-6956562d0c6c] received
+[2025-02-04 15:05:50,609: WARNING/MainProcess] Отправка письма
+[2025-02-04 15:05:52,000: INFO/MainProcess] Task backend.tasks.send_email[1c2c2626-f23a-4d05-a613-6956562d0c6c] succeeded in 1.390999999945052s: 'Письмо отправлено успешно. Результат: 1'
+[2025-02-04 15:06:05,321: INFO/MainProcess] Task backend.tasks.do_import[2a2ce547-4547-44ec-a7c8-f39dcbccc7eb] received
+[2025-02-04 15:06:05,321: ERROR/MainProcess] Ошибка чтения файла importfile.json: [Errno 2] No such file or directory: 'importfile.json'
+[2025-02-04 15:06:05,332: INFO/MainProcess] Task backend.tasks.do_import[2a2ce547-4547-44ec-a7c8-f39dcbccc7eb] succeeded in 0.0s: 'Ошибка чтения файла importfile.json: [Errno 2] No such file or directory: \'importfile.json\''
+[2025-02-04 15:06:05,339: INFO/MainProcess] Task backend.tasks.send_email[8d9149ef-b97a-4429-a4f8-5f470d4bb2e2] received
+[2025-02-04 15:06:05,340: WARNING/MainProcess] Отправка письма
+[2025-02-04 15:06:07,166: INFO/MainProcess] Task backend.tasks.send_email[8d9149ef-b97a-4429-a4f8-5f470d4bb2e2] succeeded in 1.827999999979511s: 'Письмо отправлено успешно. Результат: 1'
+[2025-02-04 16:01:04,701: INFO/MainProcess] Task backend.tasks.do_import[0d513d04-7d30-4b44-865e-24349a207c93] received
+[2025-02-04 16:01:05,029: ERROR/MainProcess] Ошибка импорта записи для модели 'Shop': {'id': 1, 'name': 'Shop 1', 'url': 'http://shop1.example.com', 'user': 1, 'state': True}. Ошибка: Cannot assign "1": "Shop.user" must be a "User" instance.
+[2025-02-04 16:01:05,035: ERROR/MainProcess] Ошибка импорта записи для модели 'Product': {'id': 1, 'name': 'Smartphone', 'category': 1}. Ошибка: Cannot assign "1": "Product.category" must be a "Category" instance.
+[2025-02-04 16:01:05,111: ERROR/MainProcess] Ошибка импорта записи для модели 'ProductInfo': {'id': 1, 'model': 'Model X', 'external_id': 1001, 'product': 1, 'shop': 1, 'quantity': 50, 'price': 300, 'price_rrc': 350}. Ошибка: Cannot assign "1": "ProductInfo.product" must be a "Product" instance.
+[2025-02-04 16:01:05,117: ERROR/MainProcess] Ошибка импорта записи для модели 'ProductParameter': {'id': 1, 'product_info': 1, 'parameter': 1, 'value': 'Black'}. Ошибка: Cannot assign "1": "ProductParameter.product_info" must be a "ProductInfo" instance.
+[2025-02-04 16:01:05,117: ERROR/MainProcess] Ошибка импорта записи для модели 'Contact': {'id': 1, 'user': 1, 'city': 'New York', 'street': '5th Avenue', 'house': '10', 'structure': '', 'building': '', 'apartment': '101', 'phone': '+123456789'}. Ошибка: Cannot assign "1": "Contact.user" must be a "User" instance.
+[2025-02-04 16:01:05,118: ERROR/MainProcess] Ошибка импорта записи для модели 'Order': {'id': 1, 'user': 1, 'dt': '2025-02-04T10:00:00Z', 'state': 'new', 'contact': 1}. Ошибка: Cannot assign "1": "Order.user" must be a "User" instance.
+[2025-02-04 16:01:05,118: ERROR/MainProcess] Ошибка импорта записи для модели 'OrderItem': {'id': 1, 'order': 1, 'product_info': 1, 'quantity': 2}. Ошибка: Cannot assign "1": "OrderItem.order" must be a "Order" instance.
+[2025-02-04 16:01:05,118: ERROR/MainProcess] Ошибка импорта записи для модели 'ConfirmEmailToken': {'id': 1, 'user': 1, 'created_at': '2025-02-04T09:55:00Z', 'key': 'some_generated_key'}. Ошибка: Cannot assign "1": "ConfirmEmailToken.user" must be a "User" instance.
+[2025-02-04 16:01:05,184: INFO/MainProcess] Импорт завершён с ошибками:
+Ошибка импорта записи для модели 'Shop': {'id': 1, 'name': 'Shop 1', 'url': 'http://shop1.example.com', 'user': 1, 'state': True}. Ошибка: Cannot assign "1": "Shop.user" must be a "User" instance.
+Ошибка импорта записи для модели 'Product': {'id': 1, 'name': 'Smartphone', 'category': 1}. Ошибка: Cannot assign "1": "Product.category" must be a "Category" instance.
+Ошибка импорта записи для модели 'ProductInfo': {'id': 1, 'model': 'Model X', 'external_id': 1001, 'product': 1, 'shop': 1, 'quantity': 50, 'price': 300, 'price_rrc': 350}. Ошибка: Cannot assign "1": "ProductInfo.product" must be a "Product" instance.
+Ошибка импорта записи для модели 'ProductParameter': {'id': 1, 'product_info': 1, 'parameter': 1, 'value': 'Black'}. Ошибка: Cannot assign "1": "ProductParameter.product_info" must be a "ProductInfo" instance.
+Ошибка импорта записи для модели 'Contact': {'id': 1, 'user': 1, 'city': 'New York', 'street': '5th Avenue', 'house': '10', 'structure': '', 'building': '', 'apartment': '101', 'phone': '+123456789'}. Ошибка: Cannot assign "1": "Contact.user" must be a "User" instance.
+Ошибка импорта записи для модели 'Order': {'id': 1, 'user': 1, 'dt': '2025-02-04T10:00:00Z', 'state': 'new', 'contact': 1}. Ошибка: Cannot assign "1": "Order.user" must be a "User" instance.
+Ошибка импорта записи для модели 'OrderItem': {'id': 1, 'order': 1, 'product_info': 1, 'quantity': 2}. Ошибка: Cannot assign "1": "OrderItem.order" must be a "Order" instance.
+Ошибка импорта записи для модели 'ConfirmEmailToken': {'id': 1, 'user': 1, 'created_at': '2025-02-04T09:55:00Z', 'key': 'some_generated_key'}. Ошибка: Cannot assign "1": "ConfirmEmailToken.user" must be a "User" instance.
+[2025-02-04 16:01:05,202: INFO/MainProcess] Task backend.tasks.do_import[0d513d04-7d30-4b44-865e-24349a207c93] succeeded in 0.48400000005494803s: 'Импорт завершён с ошибками:
+Ошибка импорта записи для модели \'Shop\': {\'id\': 1, \'name\': \'Shop 1\', \'url\': \'http://shop1.example.com\', \'user\': 1, \'state\': True}. Ошибка: Cannot assign "1": "Shop.user" must be a "User" instance.
+Ошибка импорта записи для модели \'Product\': {\'id\': 1, \'name\': \'Smartphone\', \'category\': 1}. Ошибка: Cannot assign "1": "Product.category" must be a "Category" instance.
+Ошибка импорта записи для модели \'ProductInfo\': {\'id\': 1, \'model\': \'Model X\', \'external_id\': 1001, \'product\': 1, \'shop\': 1, \'quantity\': 50, \'price\': 300, \'price_rrc\': 350}. Ошибка: Cannot assign "1": "ProductInfo.product" must be a "Product" instance.
+Ошибка импорта записи для модели \'ProductParameter\': {\'id\': 1, \'product_info\': 1, \'parameter\': 1, \'value\': \'Black\'}. Ошибка: Cannot assign "1": "ProductParameter.product_info" must be a "ProductInfo" instance.
+Ошибка импорта записи для модели \'Contact\': {\'id\': 1, \'user\': 1, \'city\': \'New York\', \'street\': \'5th Avenue\', \'house\': \'10\', \'structure\': \'\', \'building\': \'\',...'
+[2025-02-04 16:01:05,222: INFO/MainProcess] Task backend.tasks.send_email[164458c5-95d1-4d28-8dd3-fe1ca1e8cb06] received
+[2025-02-04 16:01:05,224: WARNING/MainProcess] Отправка письма
+[2025-02-04 16:01:06,534: INFO/MainProcess] Task backend.tasks.send_email[164458c5-95d1-4d28-8dd3-fe1ca1e8cb06] succeeded in 1.297000000020489s: 'Письмо отправлено успешно. Результат: 1'
+[2025-02-05 14:46:13,216: WARNING/MainProcess] C:\python study\diplom\python-final-diplom\reference\netology_pd_diplom\venv\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-02-05 14:46:17,295: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/0: Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение..
+Trying again in 2.00 seconds... (1/100)
+
+[2025-02-05 14:46:23,373: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/0: Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение..
+Trying again in 4.00 seconds... (2/100)
+
+[2025-02-05 14:46:31,457: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/0: Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение..
+Trying again in 6.00 seconds... (3/100)
+
+[2025-02-05 14:46:41,535: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/0: Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение..
+Trying again in 8.00 seconds... (4/100)
+
+[2025-02-05 14:46:53,605: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/0: Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение..
+Trying again in 10.00 seconds... (5/100)
+
+[2025-02-05 14:47:07,674: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/0: Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение..
+Trying again in 12.00 seconds... (6/100)
+
+[2025-02-05 14:47:23,752: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/0: Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение..
+Trying again in 14.00 seconds... (7/100)
+
+[2025-02-05 14:47:41,801: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/0: Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение..
+Trying again in 16.00 seconds... (8/100)
+
+[2025-02-05 14:48:01,896: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/0: Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение..
+Trying again in 18.00 seconds... (9/100)
+
+[2025-02-05 14:48:23,983: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/0: Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение..
+Trying again in 20.00 seconds... (10/100)
+
+[2025-02-05 14:48:48,089: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/0: Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение..
+Trying again in 22.00 seconds... (11/100)
+
+[2025-02-05 14:49:14,164: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/0: Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение..
+Trying again in 24.00 seconds... (12/100)
+
+[2025-02-05 14:49:42,226: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/0: Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение..
+Trying again in 26.00 seconds... (13/100)
+
+[2025-02-05 14:50:12,271: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/0: Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение..
+Trying again in 28.00 seconds... (14/100)
+
+[2025-02-05 14:50:44,379: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/0: Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение..
+Trying again in 30.00 seconds... (15/100)
+
+[2025-02-05 14:51:18,489: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/0: Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение..
+Trying again in 32.00 seconds... (16/100)
+
+[2025-02-05 14:51:54,557: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379/0: Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение..
+Trying again in 32.00 seconds... (16/100)
+
+[2025-02-05 14:52:26,606: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2025-02-05 14:52:26,629: WARNING/MainProcess] C:\python study\diplom\python-final-diplom\reference\netology_pd_diplom\venv\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-02-05 14:52:26,648: INFO/MainProcess] mingle: searching for neighbors
+[2025-02-05 14:52:27,722: INFO/MainProcess] mingle: all alone
+[2025-02-05 14:52:27,808: INFO/MainProcess] celery@LAPTOP-035AGQ98 ready.
+[2025-02-05 14:53:48,883: INFO/MainProcess] Task backend.tasks.send_email[70fa11d7-bd0e-4d6d-907e-f5057cf1c8fa] received
+[2025-02-05 14:53:48,892: WARNING/MainProcess] Отправка письма
+[2025-02-05 14:53:50,363: INFO/MainProcess] Task backend.tasks.send_email[70fa11d7-bd0e-4d6d-907e-f5057cf1c8fa] succeeded in 1.469000000000051s: 'Письмо отправлено успешно. Результат: 1'
+[2025-02-05 14:53:58,047: INFO/MainProcess] Task backend.tasks.send_email[dc5a7a9a-d4c6-4ea9-97de-2d448c11a7e1] received
+[2025-02-05 14:53:58,047: WARNING/MainProcess] Отправка письма
+[2025-02-05 14:53:59,308: INFO/MainProcess] Task backend.tasks.send_email[dc5a7a9a-d4c6-4ea9-97de-2d448c11a7e1] succeeded in 1.265999999999849s: 'Письмо отправлено успешно. Результат: 1'
+[2025-02-05 14:54:06,474: INFO/MainProcess] Task backend.tasks.do_import[d88622e3-a788-4224-8b69-9a60e4f81935] received
+[2025-02-05 14:54:06,628: ERROR/MainProcess] Ошибка импорта записи для модели 'OrderItem': {'id': 1, 'order': <Order: 2025-02-04 10:00:00+00:00>, 'product_info': <ProductInfo: Smartphone - Model X - Shop 1>, 'quantity': 2}. Ошибка: UNIQUE constraint failed: backend_orderitem.order_id, backend_orderitem.product_info_id
+[2025-02-05 14:54:06,643: INFO/MainProcess] Импорт завершён с ошибками:
+Ошибка импорта записи для модели 'OrderItem': {'id': 1, 'order': <Order: 2025-02-04 10:00:00+00:00>, 'product_info': <ProductInfo: Smartphone - Model X - Shop 1>, 'quantity': 2}. Ошибка: UNIQUE constraint failed: backend_orderitem.order_id, backend_orderitem.product_info_id
+[2025-02-05 14:54:06,647: INFO/MainProcess] Task backend.tasks.do_import[d88622e3-a788-4224-8b69-9a60e4f81935] succeeded in 0.17200000000002547s: 'Импорт завершён с ошибками:
+Ошибка импорта записи для модели \'OrderItem\': {\'id\': 1, \'order\': <Order: 2025-02-04 10:00:00+00:00>, \'product_info\': <ProductInfo: Smartphone - Model X - Shop 1>, \'quantity\': 2}. Ошибка: UNIQUE constraint failed: backend_orderitem.order_id, backend_orderitem.product_info_id'
+[2025-02-05 14:54:06,656: INFO/MainProcess] Task backend.tasks.send_email[eb263272-0420-42b1-917a-8409e4ba57dd] received
+[2025-02-05 14:54:06,656: WARNING/MainProcess] Отправка письма
+[2025-02-05 14:54:08,121: INFO/MainProcess] Task backend.tasks.send_email[eb263272-0420-42b1-917a-8409e4ba57dd] succeeded in 1.4680000000000746s: 'Письмо отправлено успешно. Результат: 1'
+[2025-02-05 14:55:53,590: INFO/MainProcess] Task backend.tasks.send_email[7cccd493-b824-4def-97e2-8d2012c79576] received
+[2025-02-05 14:55:53,591: WARNING/MainProcess] Отправка письма
+[2025-02-05 14:55:54,824: INFO/MainProcess] Task backend.tasks.send_email[7cccd493-b824-4def-97e2-8d2012c79576] succeeded in 1.234000000000151s: 'Письмо отправлено успешно. Результат: 1'
+[2025-02-05 14:56:03,363: INFO/MainProcess] Task backend.tasks.do_import[99145954-ac59-4893-812d-f3473db80939] received
+[2025-02-05 14:56:03,380: INFO/MainProcess] Запись ProductInfo с external_id 1001, shop 1 и product 1 уже существует. Пропускаем.
+[2025-02-05 14:56:03,400: ERROR/MainProcess] Ошибка импорта записи для модели 'OrderItem': {'id': 1, 'order': <Order: 2025-02-04 10:00:00+00:00>, 'product_info': <ProductInfo: Smartphone - Model X - Shop 1>, 'quantity': 2}. Ошибка: UNIQUE constraint failed: backend_orderitem.order_id, backend_orderitem.product_info_id
+[2025-02-05 14:56:03,409: INFO/MainProcess] Импорт завершён с ошибками:
+Ошибка импорта записи для модели 'OrderItem': {'id': 1, 'order': <Order: 2025-02-04 10:00:00+00:00>, 'product_info': <ProductInfo: Smartphone - Model X - Shop 1>, 'quantity': 2}. Ошибка: UNIQUE constraint failed: backend_orderitem.order_id, backend_orderitem.product_info_id
+[2025-02-05 14:56:03,412: INFO/MainProcess] Task backend.tasks.do_import[99145954-ac59-4893-812d-f3473db80939] succeeded in 0.047000000000025466s: 'Импорт завершён с ошибками:
+Ошибка импорта записи для модели \'OrderItem\': {\'id\': 1, \'order\': <Order: 2025-02-04 10:00:00+00:00>, \'product_info\': <ProductInfo: Smartphone - Model X - Shop 1>, \'quantity\': 2}. Ошибка: UNIQUE constraint failed: backend_orderitem.order_id, backend_orderitem.product_info_id'
+[2025-02-05 14:56:03,417: INFO/MainProcess] Task backend.tasks.send_email[3323d17b-72f4-4916-87d7-6242dff546cb] received
+[2025-02-05 14:56:03,417: WARNING/MainProcess] Отправка письма
+[2025-02-05 14:56:04,518: INFO/MainProcess] Task backend.tasks.send_email[3323d17b-72f4-4916-87d7-6242dff546cb] succeeded in 1.0939999999998236s: 'Письмо отправлено успешно. Результат: 1'
+[2025-02-05 15:01:07,636: INFO/MainProcess] Task backend.tasks.do_import[d287f0bb-e03a-46bb-98c9-a3e60e7b5502] received
+[2025-02-05 15:01:07,668: INFO/MainProcess] Запись ProductInfo с external_id 1001, shop 1 и product 1 уже существует. Пропускаем.
+[2025-02-05 15:01:07,693: ERROR/MainProcess] Ошибка импорта записи для модели 'OrderItem': {'id': 1, 'order': <Order: 2025-02-04 10:00:00+00:00>, 'product_info': <ProductInfo: Smartphone - Model X - Shop 1>, 'quantity': 2}. Ошибка: UNIQUE constraint failed: backend_orderitem.order_id, backend_orderitem.product_info_id
+[2025-02-05 15:01:07,703: INFO/MainProcess] Импорт завершён с ошибками:
+Ошибка импорта записи для модели 'OrderItem': {'id': 1, 'order': <Order: 2025-02-04 10:00:00+00:00>, 'product_info': <ProductInfo: Smartphone - Model X - Shop 1>, 'quantity': 2}. Ошибка: UNIQUE constraint failed: backend_orderitem.order_id, backend_orderitem.product_info_id
+[2025-02-05 15:01:07,707: INFO/MainProcess] Task backend.tasks.do_import[d287f0bb-e03a-46bb-98c9-a3e60e7b5502] succeeded in 0.06200000000012551s: 'Импорт завершён с ошибками:
+Ошибка импорта записи для модели \'OrderItem\': {\'id\': 1, \'order\': <Order: 2025-02-04 10:00:00+00:00>, \'product_info\': <ProductInfo: Smartphone - Model X - Shop 1>, \'quantity\': 2}. Ошибка: UNIQUE constraint failed: backend_orderitem.order_id, backend_orderitem.product_info_id'
+[2025-02-05 15:01:07,713: INFO/MainProcess] Task backend.tasks.send_email[b53c925a-a268-4452-b8a8-458e974896a6] received
+[2025-02-05 15:01:07,714: WARNING/MainProcess] Отправка письма
+[2025-02-05 15:01:09,440: INFO/MainProcess] Task backend.tasks.send_email[b53c925a-a268-4452-b8a8-458e974896a6] succeeded in 1.719000000000051s: 'Письмо отправлено успешно. Результат: 1'
+[2025-02-05 15:02:22,533: INFO/MainProcess] Task backend.tasks.do_import[11c12b02-f4c9-4f37-b74d-1d459272b04e] received
+[2025-02-05 15:02:22,553: INFO/MainProcess] Запись ProductInfo с external_id 1001, shop 1 и product 1 уже существует. Пропускаем.
+[2025-02-05 15:02:22,575: ERROR/MainProcess] Ошибка импорта записи для модели 'OrderItem': {'id': 1, 'order': <Order: 2025-02-04 10:00:00+00:00>, 'product_info': <ProductInfo: Smartphone - Model X - Shop 1>, 'quantity': 2}. Ошибка: UNIQUE constraint failed: backend_orderitem.order_id, backend_orderitem.product_info_id
+[2025-02-05 15:02:22,585: INFO/MainProcess] Импорт завершён с ошибками:
+Ошибка импорта записи для модели 'OrderItem': {'id': 1, 'order': <Order: 2025-02-04 10:00:00+00:00>, 'product_info': <ProductInfo: Smartphone - Model X - Shop 1>, 'quantity': 2}. Ошибка: UNIQUE constraint failed: backend_orderitem.order_id, backend_orderitem.product_info_id
+[2025-02-05 15:02:22,589: INFO/MainProcess] Task backend.tasks.do_import[11c12b02-f4c9-4f37-b74d-1d459272b04e] succeeded in 0.06199999999989814s: 'Импорт завершён с ошибками:
+Ошибка импорта записи для модели \'OrderItem\': {\'id\': 1, \'order\': <Order: 2025-02-04 10:00:00+00:00>, \'product_info\': <ProductInfo: Smartphone - Model X - Shop 1>, \'quantity\': 2}. Ошибка: UNIQUE constraint failed: backend_orderitem.order_id, backend_orderitem.product_info_id'
+[2025-02-05 15:02:22,595: INFO/MainProcess] Task backend.tasks.send_email[2bff7f76-9a45-4516-86d1-6967f45f2450] received
+[2025-02-05 15:02:22,596: WARNING/MainProcess] Отправка письма
+[2025-02-05 15:02:23,777: INFO/MainProcess] Task backend.tasks.send_email[2bff7f76-9a45-4516-86d1-6967f45f2450] succeeded in 1.1880000000001019s: 'Письмо отправлено успешно. Результат: 1'
+[2025-02-05 15:28:13,567: INFO/MainProcess] Task backend.tasks.do_import[1171b515-0222-4176-aab6-687b8fafe2d6] received
+[2025-02-05 15:28:13,597: INFO/MainProcess] Запись ProductInfo с external_id 1001, shop 1 и product 1 уже существует. Пропускаем.
+[2025-02-05 15:28:13,624: ERROR/MainProcess] Ошибка импорта записи для модели 'OrderItem': {'id': 1, 'order': <Order: 2025-02-04 10:00:00+00:00>, 'product_info': <ProductInfo: Smartphone - Model X - Shop 1>, 'quantity': 2}. Ошибка: UNIQUE constraint failed: backend_orderitem.order_id, backend_orderitem.product_info_id
+[2025-02-05 15:28:13,635: INFO/MainProcess] Импорт завершён с ошибками:
+Ошибка импорта записи для модели 'OrderItem': {'id': 1, 'order': <Order: 2025-02-04 10:00:00+00:00>, 'product_info': <ProductInfo: Smartphone - Model X - Shop 1>, 'quantity': 2}. Ошибка: UNIQUE constraint failed: backend_orderitem.order_id, backend_orderitem.product_info_id
+[2025-02-05 15:28:13,640: INFO/MainProcess] Task backend.tasks.do_import[1171b515-0222-4176-aab6-687b8fafe2d6] succeeded in 0.07799999999997453s: 'Импорт завершён с ошибками:
+Ошибка импорта записи для модели \'OrderItem\': {\'id\': 1, \'order\': <Order: 2025-02-04 10:00:00+00:00>, \'product_info\': <ProductInfo: Smartphone - Model X - Shop 1>, \'quantity\': 2}. Ошибка: UNIQUE constraint failed: backend_orderitem.order_id, backend_orderitem.product_info_id'
+[2025-02-05 15:28:13,649: INFO/MainProcess] Task backend.tasks.send_email[0b21d446-6595-4951-a69c-df14f2658b34] received
+[2025-02-05 15:28:13,650: WARNING/MainProcess] Отправка письма
+[2025-02-05 15:28:18,972: INFO/MainProcess] Task backend.tasks.send_email[0b21d446-6595-4951-a69c-df14f2658b34] succeeded in 5.311999999999898s: 'Письмо отправлено успешно. Результат: 1'
+[2025-02-05 15:30:05,172: WARNING/MainProcess] C:\python study\diplom\python-final-diplom\reference\netology_pd_diplom\venv\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-02-05 15:30:05,188: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2025-02-05 15:30:05,189: WARNING/MainProcess] C:\python study\diplom\python-final-diplom\reference\netology_pd_diplom\venv\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-02-05 15:30:05,201: INFO/MainProcess] mingle: searching for neighbors
+[2025-02-05 15:30:06,295: INFO/MainProcess] mingle: all alone
+[2025-02-05 15:30:06,373: INFO/MainProcess] celery@LAPTOP-035AGQ98 ready.
+[2025-02-05 15:31:05,229: WARNING/MainProcess] C:\python study\diplom\python-final-diplom\reference\netology_pd_diplom\venv\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-02-05 15:31:05,242: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2025-02-05 15:31:05,243: WARNING/MainProcess] C:\python study\diplom\python-final-diplom\reference\netology_pd_diplom\venv\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-02-05 15:31:05,250: INFO/MainProcess] mingle: searching for neighbors
+[2025-02-05 15:31:06,299: INFO/MainProcess] mingle: all alone
+[2025-02-05 15:31:06,402: INFO/MainProcess] celery@LAPTOP-035AGQ98 ready.
+[2025-02-05 15:31:21,288: INFO/MainProcess] Task backend.tasks.do_import[e6f767e3-f04d-4c99-8591-dac611116d66] received
+[2025-02-05 15:31:21,289: ERROR/MainProcess] Ошибка импорта записи для модели 'User': {'email': 'john.doe@example.com', 'company': 'Acme Inc.', 'position': 'Manager', 'username': 'johndoe', 'first_name': 'John', 'last_name': 'Doe', 'is_active': True, 'type': 'buyer'}. Ошибка: name 'convert_foreign_keys' is not defined
+[2025-02-05 15:31:21,290: ERROR/MainProcess] Ошибка импорта записи для модели 'Shop': {'name': 'Shop 1', 'url': 'http://shop1.example.com', 'user': 1, 'state': True}. Ошибка: name 'convert_foreign_keys' is not defined
+[2025-02-05 15:31:21,290: ERROR/MainProcess] Ошибка импорта записи для модели 'Category': {'name': 'Electronics'}. Ошибка: name 'convert_foreign_keys' is not defined
+[2025-02-05 15:31:21,290: ERROR/MainProcess] Ошибка импорта записи для модели 'Product': {'name': 'Smartphone', 'category': 1}. Ошибка: name 'convert_foreign_keys' is not defined
+[2025-02-05 15:31:21,295: INFO/MainProcess] Запись ProductInfo с external_id 1001, shop 1 и product 1 уже существует. Пропускаем.
+[2025-02-05 15:31:21,296: ERROR/MainProcess] Ошибка импорта записи для модели 'Parameter': {'name': 'Color'}. Ошибка: name 'convert_foreign_keys' is not defined
+[2025-02-05 15:31:21,297: ERROR/MainProcess] Ошибка импорта записи для модели 'ProductParameter': {'product_info': 1, 'parameter': 1, 'value': 'Black'}. Ошибка: name 'convert_foreign_keys' is not defined
+[2025-02-05 15:31:21,297: ERROR/MainProcess] Ошибка импорта записи для модели 'Contact': {'user': 1, 'city': 'New York', 'street': '5th Avenue', 'house': '10', 'structure': '', 'building': '', 'apartment': '101', 'phone': '+123456789'}. Ошибка: name 'convert_foreign_keys' is not defined
+[2025-02-05 15:31:21,297: ERROR/MainProcess] Ошибка импорта записи для модели 'Order': {'user': 1, 'dt': '2025-02-04T10:00:00Z', 'state': 'new', 'contact': 1}. Ошибка: name 'convert_foreign_keys' is not defined
+[2025-02-05 15:31:21,297: ERROR/MainProcess] Ошибка импорта записи для модели 'OrderItem': {'order': 1, 'product_info': 1, 'quantity': 2}. Ошибка: name 'convert_foreign_keys' is not defined
+[2025-02-05 15:31:21,297: ERROR/MainProcess] Ошибка импорта записи для модели 'ConfirmEmailToken': {'user': 1, 'created_at': '2025-02-04T09:55:00Z', 'key': 'some_generated_key'}. Ошибка: name 'convert_foreign_keys' is not defined
+[2025-02-05 15:31:21,347: INFO/MainProcess] Импорт завершён с ошибками:
+Ошибка импорта записи для модели 'User': {'email': 'john.doe@example.com', 'company': 'Acme Inc.', 'position': 'Manager', 'username': 'johndoe', 'first_name': 'John', 'last_name': 'Doe', 'is_active': True, 'type': 'buyer'}. Ошибка: name 'convert_foreign_keys' is not defined
+Ошибка импорта записи для модели 'Shop': {'name': 'Shop 1', 'url': 'http://shop1.example.com', 'user': 1, 'state': True}. Ошибка: name 'convert_foreign_keys' is not defined
+Ошибка импорта записи для модели 'Category': {'name': 'Electronics'}. Ошибка: name 'convert_foreign_keys' is not defined
+Ошибка импорта записи для модели 'Product': {'name': 'Smartphone', 'category': 1}. Ошибка: name 'convert_foreign_keys' is not defined
+Ошибка импорта записи для модели 'Parameter': {'name': 'Color'}. Ошибка: name 'convert_foreign_keys' is not defined
+Ошибка импорта записи для модели 'ProductParameter': {'product_info': 1, 'parameter': 1, 'value': 'Black'}. Ошибка: name 'convert_foreign_keys' is not defined
+Ошибка импорта записи для модели 'Contact': {'user': 1, 'city': 'New York', 'street': '5th Avenue', 'house': '10', 'structure': '', 'building': '', 'apartment': '101', 'phone': '+123456789'}. Ошибка: name 'convert_foreign_keys' is not defined
+Ошибка импорта записи для модели 'Order': {'user': 1, 'dt': '2025-02-04T10:00:00Z', 'state': 'new', 'contact': 1}. Ошибка: name 'convert_foreign_keys' is not defined
+Ошибка импорта записи для модели 'OrderItem': {'order': 1, 'product_info': 1, 'quantity': 2}. Ошибка: name 'convert_foreign_keys' is not defined
+Ошибка импорта записи для модели 'ConfirmEmailToken': {'user': 1, 'created_at': '2025-02-04T09:55:00Z', 'key': 'some_generated_key'}. Ошибка: name 'convert_foreign_keys' is not defined
+[2025-02-05 15:31:21,363: INFO/MainProcess] Task backend.tasks.do_import[e6f767e3-f04d-4c99-8591-dac611116d66] succeeded in 0.07799999999997453s: 'Импорт завершён с ошибками:
+Ошибка импорта записи для модели \'User\': {\'email\': \'john.doe@example.com\', \'company\': \'Acme Inc.\', \'position\': \'Manager\', \'username\': \'johndoe\', \'first_name\': \'John\', \'last_name\': \'Doe\', \'is_active\': True, \'type\': \'buyer\'}. Ошибка: name \'convert_foreign_keys\' is not defined
+Ошибка импорта записи для модели \'Shop\': {\'name\': \'Shop 1\', \'url\': \'http://shop1.example.com\', \'user\': 1, \'state\': True}. Ошибка: name \'convert_foreign_keys\' is not defined
+Ошибка импорта записи для модели \'Category\': {\'name\': \'Electronics\'}. Ошибка: name \'convert_foreign_keys\' is not defined
+Ошибка импорта записи для модели \'Product\': {\'name\': \'Smartphone\', \'category\': 1}. Ошибка: name \'convert_foreign_keys\' is not defined
+Ошибка импорта записи для модели \'Parameter\': {\'name\': \'Color\'}. Ошибка: name \'convert_foreign_keys\' is not defined
+Ошибка импорта записи для модели \'ProductParameter\': {\'product_info\': 1, \'parameter\': 1, \'value\': \'Black\'}. Ошибка: name \'convert_foreign_keys\' is not defined
+Ошибка импорта...'
+[2025-02-05 15:31:21,371: INFO/MainProcess] Task backend.tasks.send_email[2c01a3d8-1450-4c8c-9cfc-c573816164e8] received
+[2025-02-05 15:31:21,372: WARNING/MainProcess] Отправка письма
+[2025-02-05 15:31:22,793: INFO/MainProcess] Task backend.tasks.send_email[2c01a3d8-1450-4c8c-9cfc-c573816164e8] succeeded in 1.4220000000000255s: 'Письмо отправлено успешно. Результат: 1'
+[2025-02-05 15:32:51,518: WARNING/MainProcess] C:\python study\diplom\python-final-diplom\reference\netology_pd_diplom\venv\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-02-05 15:32:51,568: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2025-02-05 15:32:51,569: WARNING/MainProcess] C:\python study\diplom\python-final-diplom\reference\netology_pd_diplom\venv\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-02-05 15:32:51,577: INFO/MainProcess] mingle: searching for neighbors
+[2025-02-05 15:32:52,615: INFO/MainProcess] mingle: all alone
+[2025-02-05 15:32:52,675: INFO/MainProcess] celery@LAPTOP-035AGQ98 ready.
+[2025-02-05 15:33:31,062: INFO/MainProcess] Task backend.tasks.do_import[d1716ffc-5f20-4b4f-8241-9f7d1475b45e] received
+[2025-02-05 15:33:31,068: ERROR/MainProcess] Ошибка импорта записи для модели 'User': {'email': 'john.doe@example.com', 'company': 'Acme Inc.', 'position': 'Manager', 'username': 'johndoe', 'first_name': 'John', 'last_name': 'Doe', 'is_active': True, 'type': 'buyer'}. Ошибка: UNIQUE constraint failed: backend_user.email
+[2025-02-05 15:33:31,071: ERROR/MainProcess] Ошибка импорта записи для модели 'Shop': {'name': 'Shop 1', 'url': 'http://shop1.example.com', 'user': <User: John Doe>, 'state': True}. Ошибка: UNIQUE constraint failed: backend_shop.user_id
+[2025-02-05 15:33:31,083: INFO/MainProcess] Запись ProductInfo с external_id 1001, shop 1 и product 1 уже существует. Пропускаем.
+[2025-02-05 15:33:31,093: ERROR/MainProcess] Ошибка импорта записи для модели 'ProductParameter': {'product_info': <ProductInfo: Smartphone - Model X - Shop 1>, 'parameter': <Parameter: Color>, 'value': 'Black'}. Ошибка: UNIQUE constraint failed: backend_productparameter.product_info_id, backend_productparameter.parameter_id
+[2025-02-05 15:33:31,107: INFO/MainProcess] Запись OrderItem с order_id 1 и product_info_id 1 уже существует. Пропускаем.
+[2025-02-05 15:33:31,109: ERROR/MainProcess] Ошибка импорта записи для модели 'ConfirmEmailToken': {'user': <User: John Doe>, 'created_at': '2025-02-04T09:55:00Z', 'key': 'some_generated_key'}. Ошибка: UNIQUE constraint failed: backend_confirmemailtoken.key
+[2025-02-05 15:33:31,120: INFO/MainProcess] Импорт завершён с ошибками:
+Ошибка импорта записи для модели 'User': {'email': 'john.doe@example.com', 'company': 'Acme Inc.', 'position': 'Manager', 'username': 'johndoe', 'first_name': 'John', 'last_name': 'Doe', 'is_active': True, 'type': 'buyer'}. Ошибка: UNIQUE constraint failed: backend_user.email
+Ошибка импорта записи для модели 'Shop': {'name': 'Shop 1', 'url': 'http://shop1.example.com', 'user': <User: John Doe>, 'state': True}. Ошибка: UNIQUE constraint failed: backend_shop.user_id
+Ошибка импорта записи для модели 'ProductParameter': {'product_info': <ProductInfo: Smartphone - Model X - Shop 1>, 'parameter': <Parameter: Color>, 'value': 'Black'}. Ошибка: UNIQUE constraint failed: backend_productparameter.product_info_id, backend_productparameter.parameter_id
+Ошибка импорта записи для модели 'ConfirmEmailToken': {'user': <User: John Doe>, 'created_at': '2025-02-04T09:55:00Z', 'key': 'some_generated_key'}. Ошибка: UNIQUE constraint failed: backend_confirmemailtoken.key
+[2025-02-05 15:33:31,132: INFO/MainProcess] Task backend.tasks.do_import[d1716ffc-5f20-4b4f-8241-9f7d1475b45e] succeeded in 0.06199999999989814s: 'Импорт завершён с ошибками:
+Ошибка импорта записи для модели \'User\': {\'email\': \'john.doe@example.com\', \'company\': \'Acme Inc.\', \'position\': \'Manager\', \'username\': \'johndoe\', \'first_name\': \'John\', \'last_name\': \'Doe\', \'is_active\': True, \'type\': \'buyer\'}. Ошибка: UNIQUE constraint failed: backend_user.email
+Ошибка импорта записи для модели \'Shop\': {\'name\': \'Shop 1\', \'url\': \'http://shop1.example.com\', \'user\': <User: John Doe>, \'state\': True}. Ошибка: UNIQUE constraint failed: backend_shop.user_id
+Ошибка импорта записи для модели \'ProductParameter\': {\'product_info\': <ProductInfo: Smartphone - Model X - Shop 1>, \'parameter\': <Parameter: Color>, \'value\': \'Black\'}. Ошибка: UNIQUE constraint failed: backend_productparameter.product_info_id, backend_productparameter.parameter_id
+Ошибка импорта записи для модели \'ConfirmEmailToken\': {\'user\': <User: John Doe>, \'created_at\': \'2025-02-04T09:55:00Z\', \'key\': \'some_generated_key\'}. Ошибка: UNIQUE constraint failed: backend_confirmemailtoken.key'
+[2025-02-05 15:33:31,139: INFO/MainProcess] Task backend.tasks.send_email[463076a5-a193-4d8c-8cc1-b8e57f156df4] received
+[2025-02-05 15:33:31,140: WARNING/MainProcess] Отправка письма
+[2025-02-05 15:33:32,745: INFO/MainProcess] Task backend.tasks.send_email[463076a5-a193-4d8c-8cc1-b8e57f156df4] succeeded in 1.6089999999999236s: 'Письмо отправлено успешно. Результат: 1'
+[2025-02-05 15:34:45,713: WARNING/MainProcess] C:\python study\diplom\python-final-diplom\reference\netology_pd_diplom\venv\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-02-05 15:34:45,766: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2025-02-05 15:34:45,767: WARNING/MainProcess] C:\python study\diplom\python-final-diplom\reference\netology_pd_diplom\venv\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-02-05 15:34:45,783: INFO/MainProcess] mingle: searching for neighbors
+[2025-02-05 15:34:46,819: INFO/MainProcess] mingle: all alone
+[2025-02-05 15:34:46,906: INFO/MainProcess] celery@LAPTOP-035AGQ98 ready.
+[2025-02-05 15:36:42,933: ERROR/MainProcess] Received unregistered task of type 'backend.tasks.do_import'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+https://docs.celeryq.dev/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+The full contents of the message headers:
+{'lang': 'py', 'task': 'backend.tasks.do_import', 'id': '95611afd-febe-4ce8-a561-dcf10ef8ec58', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '95611afd-febe-4ce8-a561-dcf10ef8ec58', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen17256@LAPTOP-035AGQ98', 'ignore_result': False, 'replaced_task_nesting': 0, 'stamped_headers': None, 'stamps': {}}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "C:\python study\diplom\python-final-diplom\reference\netology_pd_diplom\venv\Lib\site-packages\celery\worker\consumer\consumer.py", line 658, in on_task_received
+    strategy = strategies[type_]
+               ~~~~~~~~~~^^^^^^^
+KeyError: 'backend.tasks.do_import'
+[2025-02-05 15:37:14,120: WARNING/MainProcess] C:\python study\diplom\python-final-diplom\reference\netology_pd_diplom\venv\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-02-05 15:37:14,170: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2025-02-05 15:37:14,171: WARNING/MainProcess] C:\python study\diplom\python-final-diplom\reference\netology_pd_diplom\venv\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-02-05 15:37:14,179: INFO/MainProcess] mingle: searching for neighbors
+[2025-02-05 15:37:15,223: INFO/MainProcess] mingle: all alone
+[2025-02-05 15:37:15,318: INFO/MainProcess] celery@LAPTOP-035AGQ98 ready.
+[2025-02-05 15:37:29,971: INFO/MainProcess] Task backend.tasks.do_import[dd559e9c-ac72-4e87-a3ff-e3f8b8bd882f] received
+[2025-02-05 15:37:29,976: ERROR/MainProcess] Ошибка импорта записи для модели 'User': {'email': 'john.doe@example.com', 'company': 'Acme Inc.', 'position': 'Manager', 'username': 'johndoe', 'first_name': 'John', 'last_name': 'Doe', 'is_active': True, 'type': 'buyer'}. Ошибка: UNIQUE constraint failed: backend_user.email
+[2025-02-05 15:37:29,979: ERROR/MainProcess] Ошибка импорта записи для модели 'Shop': {'name': 'Shop 1', 'url': 'http://shop1.example.com', 'user': <User: John Doe>, 'state': True}. Ошибка: UNIQUE constraint failed: backend_shop.user_id
+[2025-02-05 15:37:29,991: INFO/MainProcess] Запись ProductInfo с external_id 1001, shop 1 и product 1 уже существует. Пропускаем.
+[2025-02-05 15:37:29,999: INFO/MainProcess] Запись ProductParameter с product_info_id 1 и parameter_id 1 уже существует. Пропускаем.
+[2025-02-05 15:37:30,012: INFO/MainProcess] Запись OrderItem с order_id 1 и product_info_id 1 уже существует. Пропускаем.
+[2025-02-05 15:37:30,014: INFO/MainProcess] Запись ConfirmEmailToken с key some_generated_key уже существует. Пропускаем.
+[2025-02-05 15:37:30,022: INFO/MainProcess] Импорт завершён с ошибками:
+Ошибка импорта записи для модели 'User': {'email': 'john.doe@example.com', 'company': 'Acme Inc.', 'position': 'Manager', 'username': 'johndoe', 'first_name': 'John', 'last_name': 'Doe', 'is_active': True, 'type': 'buyer'}. Ошибка: UNIQUE constraint failed: backend_user.email
+Ошибка импорта записи для модели 'Shop': {'name': 'Shop 1', 'url': 'http://shop1.example.com', 'user': <User: John Doe>, 'state': True}. Ошибка: UNIQUE constraint failed: backend_shop.user_id
+[2025-02-05 15:37:30,033: INFO/MainProcess] Task backend.tasks.do_import[dd559e9c-ac72-4e87-a3ff-e3f8b8bd882f] succeeded in 0.06300000000010186s: 'Импорт завершён с ошибками:
+Ошибка импорта записи для модели \'User\': {\'email\': \'john.doe@example.com\', \'company\': \'Acme Inc.\', \'position\': \'Manager\', \'username\': \'johndoe\', \'first_name\': \'John\', \'last_name\': \'Doe\', \'is_active\': True, \'type\': \'buyer\'}. Ошибка: UNIQUE constraint failed: backend_user.email
+Ошибка импорта записи для модели \'Shop\': {\'name\': \'Shop 1\', \'url\': \'http://shop1.example.com\', \'user\': <User: John Doe>, \'state\': True}. Ошибка: UNIQUE constraint failed: backend_shop.user_id'
+[2025-02-05 15:37:30,039: INFO/MainProcess] Task backend.tasks.send_email[c7ec3659-bb41-4d2b-bc5f-d49fbec6fe16] received
+[2025-02-05 15:37:30,040: WARNING/MainProcess] Отправка письма
+[2025-02-05 15:37:31,252: INFO/MainProcess] Task backend.tasks.send_email[c7ec3659-bb41-4d2b-bc5f-d49fbec6fe16] succeeded in 1.2029999999995198s: 'Письмо отправлено успешно. Результат: 1'
+[2025-02-05 15:39:08,235: WARNING/MainProcess] C:\python study\diplom\python-final-diplom\reference\netology_pd_diplom\venv\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-02-05 15:39:08,286: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2025-02-05 15:39:08,287: WARNING/MainProcess] C:\python study\diplom\python-final-diplom\reference\netology_pd_diplom\venv\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2025-02-05 15:39:08,294: INFO/MainProcess] mingle: searching for neighbors
+[2025-02-05 15:39:09,345: INFO/MainProcess] mingle: all alone
+[2025-02-05 15:39:09,412: INFO/MainProcess] celery@LAPTOP-035AGQ98 ready.
+[2025-02-05 15:39:22,326: INFO/MainProcess] Task backend.tasks.do_import[be736883-3e64-4ba9-a04d-6276b19530f1] received
+[2025-02-05 15:39:22,332: INFO/MainProcess] Пользователь с email john.doe@example.com уже существует. Пропускаем.
+[2025-02-05 15:39:22,334: INFO/MainProcess] Магазин для пользователя 1 уже существует. Пропускаем.
+[2025-02-05 15:39:22,346: INFO/MainProcess] Запись ProductInfo с external_id 1001, shop 1 и product 1 уже существует. Пропускаем.
+[2025-02-05 15:39:22,353: INFO/MainProcess] Запись ProductParameter с product_info_id 1 и parameter_id 1 уже существует. Пропускаем.
+[2025-02-05 15:39:22,367: INFO/MainProcess] Запись OrderItem с order_id 1 и product_info_id 1 уже существует. Пропускаем.
+[2025-02-05 15:39:22,369: INFO/MainProcess] Запись ConfirmEmailToken с key some_generated_key уже существует. Пропускаем.
+[2025-02-05 15:39:22,369: INFO/MainProcess] Импорт завершён успешно без ошибок.
+[2025-02-05 15:39:22,378: INFO/MainProcess] Task backend.tasks.do_import[be736883-3e64-4ba9-a04d-6276b19530f1] succeeded in 0.04699999999957072s: 'Импорт завершён успешно без ошибок.'
